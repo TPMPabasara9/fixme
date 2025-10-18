@@ -167,6 +167,10 @@ class TechnicianProfile extends StatelessWidget {
                                             ? data.profilePictureUrl!
                                             : 'assets/images/select-user-technician.png',
                                         visitingFee: 75.0, // keep placeholder if not stored
+                                        technicianId: data.id, // Pass the actual technician ID
+                                        technicianEmail: data.email,
+                                        technicianPhone: data.phone,
+                                        serviceCategory: data.serviceCategory,
                                       ),
                                     ),
                                   );
